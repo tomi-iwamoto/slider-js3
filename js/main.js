@@ -19,17 +19,31 @@ let changeNextImg = function () {
   //active class will be transfered to the next image
   let currentImg = document.getElementsByClassName("active")[i];
   let nextImg = currentImg.nextElementSibling;
+  let lastImg = document.getElementById("last");
+
   currentImg.classList.remove("active");
   nextImg.classList.add("active");
   
   //when the image reaches the last image, then it will go to the first image. 
-  if(nextImg === null){
-     lastImg.classList.remove("active");
-     nextImg = firstImg;
-  }
+
   
 };
 
 
 nextButton.addEventListener("click", changeNextImg);
 
+let changePrevImg = function () {
+  //current image removed
+  //next image shows
+  //active class will be transfered to the next image
+  let currentImg = document.getElementsByClassName("active")[i];
+  let prevImg = currentImg.previousElementSibling;
+  currentImg.classList.remove("active");
+  prevImg.classList.add("active");
+  
+  //when the image reaches the first image, then it will go to the last image. 
+ 
+  
+};
+
+prevButton.addEventListener("click", changePrevImg);

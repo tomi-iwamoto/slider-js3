@@ -27,19 +27,19 @@
 
 
   <div id="box">
-    <button id="prev"><</button>
-    <!--the following images become an array of images-->
-      <div class="box-wrapper">
-    <img src="img/one.jpg" class="active" id="first">
-      
-        <img src="img/two.jpg" >
-      
-        <img src="img/three.jpg" id="last">
-      </div>
-      
-    <button id="next">></button>
+    <button id="prev">
+      <</button> <!--the following images become an array of images-->
+        <div class="box-wrapper">
+          <img src="img/one.jpg" class="active" id="first">
+
+          <img src="img/two.jpg">
+
+          <img src="img/three.jpg" id="last">
+        </div>
+
+        <button id="next">></button>
   </div>
-  
+
 
 
 
@@ -50,8 +50,16 @@
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+    window.ga = function () {
+      ga.q.push(arguments)
+    };
+    ga.q = [];
+    ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto');
+    ga('set', 'anonymizeIp', true);
+    ga('set', 'transport', 'beacon');
+    ga('send', 'pageview')
+
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async></script>
 </body>
